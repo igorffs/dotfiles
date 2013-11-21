@@ -29,4 +29,4 @@ alias rs="bin/rails s"
 
 # Others
 alias marked="open -a Marked"
-alias dotf="subl ~/.bash"
+alias dotf="subl ~/.dotfiles"
