@@ -1,6 +1,7 @@
 # Dirs
 alias code="cd ~/code"
 alias oss="cd ~/code/oss"
+alias sublconf="cd ~/Library/Application\ Support/Sublime\ Text\ 3"
 
 # Config
 alias reload="source ~/.bash_profile && echo '.bash_profile reloaded! :D'"
