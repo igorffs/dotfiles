@@ -38,3 +38,9 @@
 [user]
   email = andriel.nuernberg@plataformatec.com.br
   name = Andriel Nuernberg
+
+[merge]
+  ff = false
+
+[pull]
+  rebase = true
