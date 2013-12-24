@@ -24,10 +24,10 @@
 
 [core]
   editor = subl -w
-  excludesfile = /Users/andrielfn/.bash/gitignore_global
+  excludesfile = /Users/andriel/.gitignore
 
 [push]
-  default = simple
+  default = current
 
 [credential]
   helper = /opt/boxen/bin/boxen-git-credential
