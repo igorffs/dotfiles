@@ -24,7 +24,7 @@
 
 [core]
   editor = subl -w
-  excludesfile = /Users/andriel/.gitignore
+  excludesfile = /Users/andrielfn/.gitignore
 
 [push]
   default = current
