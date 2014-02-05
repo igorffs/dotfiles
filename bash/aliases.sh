@@ -32,3 +32,4 @@ alias rs="bin/rails s"
 # Others
 alias marked="open -a Marked"
 alias dotfiles="subl ~/.dotfiles"
+alias t="ruby -I'lib:test'"
