@@ -18,6 +18,9 @@ export PS1="${BLUE}\w ${YELLOW}(\$(rb-version)) ${GREEN}\$(parse_git_branch) ${R
 ## Boxen ##
 [ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
+## PATH ##
+export PATH="$HOME/.bin:$PATH"
+
 # bash completion
 # if [ -f `brew --prefix`/etc/bash_completion ]; then
 #   . `brew --prefix`/etc/bash_completion
