@@ -6,3 +6,4 @@ source ~/.dotfiles/bash/remove-merged-branches.sh
 source ~/.dotfiles/bash/git-completion.sh
 source ~/.dotfiles/bash/bash-completion.sh
 source ~/.dotfiles/bash/private.sh
+source ~/.dotfiles/bash/keys.sh
