@@ -22,7 +22,9 @@ export PS1="${BLUE}\w ${YELLOW}(\$(rb-version))${GREEN}\$(__git_ps1) ${RED}\n$ $
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 ## PATH ##
-export PATH="$HOME/.bin:$PATH"
+export GOPATH="$HOME/code/go"
+
+export PATH="$HOME/.bin:$PATH:$GOPATH/bin"
 
 # bash completion
 # if [ -f `brew --prefix`/etc/bash_completion ]; then
