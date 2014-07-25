@@ -30,14 +30,8 @@
 [push]
   default = current
 
-[credential]
-  helper = /opt/boxen/bin/boxen-git-credential
-
-[hub]
-  protocol = https
-
 [user]
-  email = andriel.nuernberg@plataformatec.com.br
+  email = andrielfn@gmail.com
   name = Andriel Nuernberg
 
 [merge]
