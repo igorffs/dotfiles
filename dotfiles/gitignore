@@ -45,5 +45,6 @@ b/
 tmp/
 vendor/ruby
 
-modules/placar-widgets/bkp
+# Go
+gin-bin
 
