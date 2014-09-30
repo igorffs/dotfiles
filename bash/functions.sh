@@ -1,3 +1,12 @@
+# Build a Go project and then run it
+function gox {
+  if [ ! -d "bin" ]; then
+    mkdir "bin"
+  fi
+
+  go build -o "bin/${PWD##*/}" && bin/${PWD##*/}
+}
+
 # Create a directory and cd to it
 function mkcd {
   mkdir -p "$1" && cd "$1"
