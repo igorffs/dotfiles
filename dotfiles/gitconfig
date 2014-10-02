@@ -25,10 +25,13 @@
 
 [core]
   editor = subl -w
-  excludesfile = /Users/andrielfn/.gitignore
+  excludesfile = ~/.gitignore
 
 [push]
   default = current
+
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential
 
 [user]
   email = andrielfn@gmail.com
