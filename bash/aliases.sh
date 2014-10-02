@@ -34,3 +34,13 @@ alias marked="open -a Marked"
 alias dotfiles="subl ~/.dotfiles"
 alias s="subl ."
 alias t="ruby -I'lib:test'"
+
+# Vagrant
+alias v="vagrant"
+alias vu="v up"
+alias vs="v suspend"
+
+# Go
+alias gb="go build"
+alias gg="go get"
+alias gr="go run"
