@@ -15,9 +15,6 @@ alias ls="ls -G"
 alias ip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d ' ' -f2"
 alias key="cat ~/.ssh/id_rsa.pub | pbcopy; echo 'SSH key copied to clipboard!'"
 
-# Git
-alias g="git"
-
 # Bundler
 alias b="bundle"
 alias bi="b install --jobs=2"

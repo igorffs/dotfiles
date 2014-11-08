@@ -1,5 +1,5 @@
 ## Editor ##
-export EDITOR="subl"
+export EDITOR="subl -w"
 
 ## Git ##
 export GIT_PS1_SHOWDIRTYSTATE=1
@@ -12,21 +12,16 @@ export HISTCONTROL="ignoreboth:erasedups" # Erase duplicates in history
 export HISTSIZE=10000 # Store 10k history entries
 shopt -s histappend # Append to the history file when exiting instead of overwriting it
 
-export PS1="${BLUE}\w ${YELLOW}(\$(rb-version))${GREEN}\$(__git_ps1) ${RED}\n$ ${NORMAL}"
-# export PS1='\[\033[0;34m\]\h\[\033[1;33m\]:\w\[\033[1;35m\]`git_ps1` \[\033[1;30m\]`rb-version` \[\033[1;37m\]\$\[\033[0m\] '
+## Customize the terminal input line
+prompt() {
+  PS1="$BLUE\w $YELLOW(\$(rb-version))$GREEN\$(__git_ps1) $RED$ $NORMAL"
+}
 
-## Boxen ##
-[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+PROMPT_COMMAND=prompt
 
 # Autojump
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 ## PATH ##
 export GOPATH="$HOME/code/go"
-
 export PATH="$HOME/.bin:$PATH:$GOPATH/bin"
-
-# bash completion
-# if [ -f `brew --prefix`/etc/bash_completion ]; then
-#   . `brew --prefix`/etc/bash_completion
-# fi
