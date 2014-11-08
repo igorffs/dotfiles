@@ -165,11 +165,6 @@ echo "Speeding up wake from sleep to 24 hours from an hour"
 # http://www.cultofmac.com/221392/quick-hack-speeds-up-retina-macbooks-wake-from-sleep-os-x-tips/
 sudo pmset -a standbydelay 86400
 
-echo ""
-echo "Disabling the annoying backswipe in Chrome"
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
-
-
 ################################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input
 ###############################################################################
@@ -389,16 +384,6 @@ read -r response
 case $response in
   [yY])
     defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
-    break;;
-  *) break;;
-esac
-
-echo ""
-echo "Disable local Time Machine backups? (This can take up a ton of SSD space on <128GB SSDs) (y/n)"
-read -r response
-case $response in
-  [yY])
-    hash tmutil &> /dev/null && sudo tmutil disablelocal
     break;;
   *) break;;
 esac

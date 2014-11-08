@@ -5,7 +5,7 @@ if test ! $(which brew); then
 fi
 
 # Update homebrew
-brew update && brew upgrade brew-cask
+brew update
 
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
@@ -22,7 +22,6 @@ brew install homebrew/dupes/grep
 
 # Install other useful binaries
 binaries=(
-  sshfs
   ack
   git
   autojump
@@ -32,7 +31,6 @@ binaries=(
   git
   go
   imagemagick
-  readline
 )
 
 # Install the binaries
