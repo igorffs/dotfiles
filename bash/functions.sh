@@ -1,3 +1,19 @@
+# Open a project in my own GitHub
+function gopen() {
+  open "https://github.com/andrielfn/${1}";
+}
+
+# Get the process on a given port
+function port() {
+  lsof -i ":${1:-80}"
+}
+
+# Start an HTTP server from a directory, optionally specifying the port
+function server() {
+    local port="${1:-8000}"
+    python -m SimpleHTTPServer "$port"
+}
+
 # Build a Go project and then run it
 function gox {
   if [ ! -d "bin" ]; then
