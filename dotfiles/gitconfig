@@ -20,11 +20,12 @@
   ll = log --pretty=format:"%C(green)%h%Cred%d\\ %Cred%s%Cblue\\ [%cn]" --decorate --numstat
   co = checkout
   fix = commit --amend
+  fixf = commit --amend --no-edit
   pom = push origin master
 	latest = for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
 
 [core]
-  editor = subl -w
+  editor = "atom -n -w"
   excludesfile = ~/.gitignore
 
 [push]
@@ -34,8 +35,8 @@
   helper = /opt/boxen/bin/boxen-git-credential
 
 [user]
-  email = andrielfn@gmail.com
-  name = Andriel Nuernberg
+  email = florian.igor@gmail.com
+  name = Igor Florian
 
 [merge]
   ff = false

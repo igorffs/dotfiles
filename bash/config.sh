@@ -1,5 +1,5 @@
 # Editor
-export EDITOR="subl -w"
+export EDITOR="atom -n -w"
 
 # Git
 export GIT_PS1_SHOWDIRTYSTATE=1
@@ -23,8 +23,6 @@ PROMPT_COMMAND=prompt
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # PATH
-export GOPATH="$HOME/code/go"
-export PATH="$HOME/.bin:$PATH:$GOPATH/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Autojump

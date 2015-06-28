@@ -1,3 +1,4 @@
+source /opt/boxen/env.sh
 source ~/.dotfiles/bash/colors.sh
 source ~/.dotfiles/bash/config.sh
 source ~/.dotfiles/bash/aliases.sh
@@ -7,3 +8,4 @@ source ~/.dotfiles/bash/git-completion.sh
 source ~/.dotfiles/bash/bash-completion.sh
 source ~/.dotfiles/bash/private.sh
 source ~/.dotfiles/bash/keys.sh
+source ~/.git-prompt.sh

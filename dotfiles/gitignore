@@ -44,7 +44,3 @@ init
 b/
 tmp/
 vendor/ruby
-
-# Go
-gin-bin
-

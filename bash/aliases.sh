@@ -1,10 +1,5 @@
-# Dirs
-alias code="cd ~/code"
-alias oss="cd ~/code/oss"
-alias sublconf="cd ~/Library/Application\ Support/Sublime\ Text\ 3"
-
 # Config
-alias reload="source ~/.bash_profile && echo '.bash_profile reloaded! :D'"
+alias reload="source ~/.profile && echo '.profile reloaded! :D'"
 
 # Shell
 alias la="ls -alh"
@@ -28,16 +23,5 @@ alias rs="bin/rails s"
 
 # Others
 alias marked="open -a Marked"
-alias dotfiles="subl ~/.dotfiles"
-alias s="subl ."
+alias dotfiles="atom ~/.dotfiles"
 alias t="ruby -I'lib:test'"
-
-# Vagrant
-alias v="vagrant"
-alias vu="v up"
-alias vs="v suspend"
-
-# Go
-alias gb="go build"
-alias gg="go get"
-alias gr="go run"

@@ -1,6 +1,6 @@
 # Open a project in my own GitHub
 function gopen() {
-  open "https://github.com/andrielfn/${1}";
+  open "https://github.com/igorffs/${1}";
 }
 
 # Get the process on a given port
