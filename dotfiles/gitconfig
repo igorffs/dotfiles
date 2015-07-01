@@ -25,7 +25,7 @@
 	latest = for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
 
 [core]
-  editor = "atom -n -w"
+  editor = "subl -w"
   excludesfile = ~/.gitignore
 
 [push]

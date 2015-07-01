@@ -9,3 +9,4 @@ source ~/.dotfiles/bash/bash-completion.sh
 source ~/.dotfiles/bash/private.sh
 source ~/.dotfiles/bash/keys.sh
 source ~/.git-prompt.sh
+

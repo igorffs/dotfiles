@@ -1,5 +1,5 @@
 # Editor
-export EDITOR="atom -n -w"
+export EDITOR="subl -w"
 
 # Git
 export GIT_PS1_SHOWDIRTYSTATE=1
