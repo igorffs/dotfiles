@@ -1,8 +1,3 @@
-# Open a project in my own GitHub
-function gopen() {
-  open "https://github.com/igorffs/${1}";
-}
-
 # Get the process on a given port
 function port() {
   lsof -i ":${1:-80}"
@@ -12,15 +7,6 @@ function port() {
 function server() {
     local port="${1:-8000}"
     python -m SimpleHTTPServer "$port"
-}
-
-# Build a Go project and then run it
-function gox {
-  if [ ! -d "bin" ]; then
-    mkdir "bin"
-  fi
-
-  go build -o "bin/${PWD##*/}" && bin/${PWD##*/}
 }
 
 # Create a directory and cd to it
