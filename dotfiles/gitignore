@@ -1,3 +1,4 @@
+
 # Compiled source #
 ###################
 *.com
@@ -44,3 +45,6 @@ init
 b/
 tmp/
 vendor/ruby
+
+# DOT ENV
+.env.local

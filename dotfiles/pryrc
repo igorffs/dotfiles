@@ -10,6 +10,10 @@ Pry.config.prompt = [
   proc { |obj, nest_level, _| "#{prompt} (#{obj}):#{nest_level} * " }
 ]
 
+Pry.config.commands.command 'pbcopy', 'Copy to clipboard' do |str|
+  IO.popen('pbcopy', 'r+') { |io| io.puts(target.eval(str)) }
+end
+
 # Default Command Set, add custom methods here:
 default_command_set = Pry::CommandSet.new do
   command 'copy', 'Copy to clipboard' do |str|

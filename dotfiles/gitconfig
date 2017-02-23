@@ -22,7 +22,10 @@
   fix = commit --amend
   fixf = commit --amend --no-edit
   pom = push origin master
+  pf = push --force-with-lease
 	latest = for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
+  cl = "!git log $1..${2:-master} --oneline --no-merges --pretty=format:'- %s (%h)'"
+  find = log --pretty=\"format:%Cgreen%H %Cblue%s\" --name-status --grep
 
 [core]
   editor = "subl -w"
@@ -43,3 +46,4 @@
 
 [pull]
   rebase = true
+  default = current
