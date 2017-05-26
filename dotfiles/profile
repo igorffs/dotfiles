@@ -11,3 +11,5 @@ source ~/.dotfiles/bash/private.sh
 source ~/.dotfiles/bash/keys.sh
 source ~/.git-prompt.sh
 
+# Fuzzy finder
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

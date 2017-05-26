@@ -47,4 +47,5 @@ tmp/
 vendor/ruby
 
 # DOT ENV
-.env.local
+.env.development.local
+.env.test.local
