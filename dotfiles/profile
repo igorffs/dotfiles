@@ -1,7 +1,6 @@
 source ~/.dotfiles/bash/colors.sh
 source ~/.dotfiles/bash/config.sh
 source ~/.dotfiles/bash/aliases.sh
-source ~/.dotfiles/bash/private_aliases.sh
 source ~/.dotfiles/bash/functions.sh
 source ~/.dotfiles/bash/git-completion.sh
 source ~/.dotfiles/bash/bash-completion.sh
@@ -9,5 +8,12 @@ source ~/.dotfiles/bash/private.sh
 source ~/.dotfiles/bash/keys.sh
 source ~/.git-prompt.sh
 
+export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+
 # Fuzzy finder
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash
