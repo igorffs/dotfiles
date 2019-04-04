@@ -18,3 +18,4 @@ export NVM_DIR="$HOME/.nvm"
 . $HOME/.asdf/completions/asdf.bash
 
 export ERL_AFLAGS="-kernel shell_history enabled"
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
