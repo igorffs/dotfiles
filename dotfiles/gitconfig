@@ -34,9 +34,6 @@
 [push]
   default = current
 
-[credential]
-  helper = /opt/boxen/bin/boxen-git-credential
-
 [user]
   email = florian.igor@gmail.com
   name = Igor Florian
