@@ -9,22 +9,16 @@
 
 [alias]
   st = status
-  ci = commit
-  cm = commit -m
-  b = branch
-  d = diff
   ds = diff --staged
-  rank = shortlog -sn --no-merges
-  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-  ls = log --pretty=format:"%C(green)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-  ll = log --pretty=format:"%C(green)%h%Cred%d\\ %Cred%s%Cblue\\ [%cn]" --decorate --numstat
   co = checkout
   fix = commit --amend
   fixf = commit --amend --no-edit
-  pom = push origin master
   pf = push --force-with-lease
+
+  l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  ls = log --pretty=format:"%C(green)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+  ll = log --pretty=format:"%C(green)%h%Cred%d\\ %Cred%s%Cblue\\ [%cn]" --decorate --numstat
 	latest = for-each-ref --count=10 --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
-  cl = "!git log $1..${2:-master} --oneline --no-merges --pretty=format:'- %s (%h)'"
   find = log --pretty=\"format:%Cgreen%H %Cblue%s\" --name-status --grep
 
 [core]
@@ -44,3 +38,7 @@
 [pull]
   rebase = true
   default = current
+
+[commit]
+  template = ~/.gitmessage
+  verbose = true
