@@ -42,3 +42,6 @@
 [commit]
   template = ~/.gitmessage
   verbose = true
+
+[includeIf "gitdir:~/src/job/"]
+  path = .gitconfig-job
